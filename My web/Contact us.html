@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tropical Twist</title>
+    <style>
+        /* General Reset */
+        * 
+
+        body {
+            
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f9f4;
+            color: #333;
+            background-image: url('C2.avif'); /* Replace with your image file name or URL */
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+            margin: 0; /* Removes default margin for the body */
+            padding: 0;
+        }
+
+        header {
+            background-color: #e1541f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f7a440;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-right: 80px; /* Adds space between the left edge and the form */
+            margin-top: 50px; /* Adds space between the top of the page and the form */
+            margin-bottom: 50px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-header h2 {
+            font-size: 2rem;
+            color: #f7a440;
+        }
+
+        .contact-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            font-size: 1rem;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            background-color: #f7a440;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffbf00;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .map {
+            margin-top: 20px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            
+            background-color: #e1541f;
+            color: white;
+            text-align: center;
+            padding: 3px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            position: relative;
+        }
+        footer p {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .contact-header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us - Tropical Twist</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact us.html">Contact Us</a>
+    </nav>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>We'd Love to Hear From You!</h2>
+            <p>Feel free to reach out to us with any questions or feedback.</p>
+        </div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@tropicaltwist.com</p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Address:</strong> 123 Tropical Lane, Sunny Beach, FL</p>
+        </div>
+
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509368!2d144.96305791576748!3d-37.81362797975121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f96ebcbf%3A0x2b0f2f52f658a1e5!2sTropical+Lane!5e0!3m2!1sen!2sus!4v1614283647123!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tropical Twist Juice Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

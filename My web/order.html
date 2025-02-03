@@ -1,0 +1,226 @@
+<style>
+    /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f9f4;
+        background-image: url('Order.jpg'); /* Replace with your image file */
+        background-size: cover; 
+        background-repeat: no-repeat;
+        
+    }
+
+    header {
+        background-color: #e1541f;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+        gap: 20px;
+        background-color: #f7a440;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .order-form {
+        max-width: 400px; /* Form will not exceed 400px */
+        width: 90%; /* Adjust to 90% of the screen width for smaller devices */
+        padding: 30px;
+        background-color: rgba(246, 218, 126, 0.9); /* Semi-transparent background */
+        border-radius: 10px;
+        margin: 50px auto; /* Centered horizontally and spaced vertically */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+        margin-left: 80px; /* Adds space between the left edge and the form */
+    margin-top: 50px; /* Adds space between the top of the page and the form */
+    margin-bottom: 50px;
+    }
+
+    .order-form h2 {
+        text-align: center;
+        color: #333; /* Dark grey color for the heading */
+        font-size: 1.8rem;
+    }
+
+    .order-form label,
+    .order-form input,
+    .order-form select,
+    .order-form textarea,
+    .order-form button {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .order-form button {
+        background-color: #ffbf00;
+        color: white;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .order-form button:hover {
+        background-color: #f7a440;
+    }
+
+    footer {
+        background-color: #e1541f;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header {
+            padding: 0.5rem;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            flex-direction: column; /* Stack navigation links vertically */
+            align-items: center;
+        }
+
+        .order-form {
+            width: 95%; /* Form takes up most of the screen on tablets */
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .order-form h2 {
+            font-size: 1.5rem;
+        }
+
+        .order-form input,
+        .order-form select,
+        .order-form textarea {
+            font-size: 0.9rem;
+        }
+
+        .order-form button {
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.2rem;
+        }
+
+        .order-form {
+            padding: 15px;
+        }
+
+        .order-form h2 {
+            font-size: 1.2rem;
+        }
+
+        .order-form input,
+        .order-form select,
+        .order-form textarea {
+            font-size: 0.8rem;
+        }
+
+        .order-form button {
+            font-size: 0.8rem;
+            padding: 8px;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tropical Twist - Make an Order</h1>
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact us.html">Contact Us</a>
+    </nav>
+
+    <div class="order-form">
+        <h2>Place Your Order</h2>
+        <form action="submit_order.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Choose a Category --</option>
+                <option value="juices">Juices</option>
+                <option value="wraps">Wraps</option>
+                <option value="salads">Salads</option>
+                <option value="fruit-bowls">Fruit Bowls</option>
+            </select>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="">-- Choose an Item --</option>
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <option value="item3">Item 3</option>
+                <option value="item4">Item 4</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special_instructions" rows="4" placeholder="Add any special requests..."></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tropical Twist Juice Shop</p>
+    </footer>
+</body>
+</html>

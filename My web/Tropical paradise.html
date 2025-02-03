@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Paradise - Tropical Twist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8e1;
+        }
+
+        header {
+            background-color: #e1541f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f7a440;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .available-juices {
+            flex: 1;
+            max-width: 40%;
+            padding: 1rem;
+            background-color: #fef4e8;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .available-juices h3 {
+            color: #e1541f;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .juice-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .juice-list li {
+            display: flex;
+            align-items: center;
+        }
+
+        .juice-list img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-info {
+            flex: 1;
+            max-width: 55%;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .product-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, #e1541f, #f7a440);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .product-info h2 {
+            color: #e1541f;
+            margin-bottom: 1rem;
+        }
+
+        .product-info p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .product-info p span {
+            font-weight: bold;
+            color: #f56a00;
+        }
+
+        .product-info ul {
+            margin-top: 1rem;
+            padding-left: 20px;
+        }
+
+        .price-highlight {
+            font-size: 1.5rem;
+            color: #e1541f;
+            font-weight: bold;
+            background-color: #fff4d1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            margin-top: 1.5rem;
+        }
+
+        .button-container a {
+            background-color: #e1541f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button-container a:hover {
+            background-color: #f7a440;
+        }
+
+        footer {
+            background-color: #e1541f;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tropical Paradise</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Order.html">Order</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact us.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <!-- Available Juices Section -->
+        <div class="available-juices">
+            <h3>Available Juices</h3>
+            <ul class="juice-list">
+                <li>
+                    <img src="Mango.jpg" alt="Mango Mania">
+                    Mango Mania
+                </li>
+                <li>
+                    <img src="pineapple.jpeg" alt="Pineapple Punch">
+                    Pineapple Punch
+                </li>
+                <li>
+                    <img src="melon.webp" alt="Citrus Burst">
+                    Watermelon Wonder
+                </li>
+                <li>
+                    <img src="papaya.jpg" alt="Berry Blast">
+                    papaya
+                </li>
+                <li>
+                    <img src="woodapple.jpg" alt="Woodapple Wonder">
+                    Woodapple Wonder
+                </li>
+                <li>
+                    <img src="avacado.png" alt="Green Glow">
+                    avacado 
+                </li>
+                <li>
+                    <img src="passion.avif" alt="Tropical Sunrise">
+                    passion Sunrise
+                </li>
+                <li>
+                    <img src="grapes.png" alt="Peach Perfection">
+                    Grapes Perfection
+                </li>
+            </ul>
+        </div>
+
+        <!-- Product Info Section -->
+        <div class="product-info">
+            
+            <p>Our <span>Tropical Paradise</span> juice is a refreshing blend of fresh mangoes, pineapples, and oranges, delivering a perfect burst of tropical flavors in every sip.</p>
+            <p>This juice is perfect for:
+                <ul>
+                    <li>Beach vibes and summer days.</li>
+                    <li>Boosting your Vitamin C intake.</li>
+                    <li>Pairing with light salads and wraps.</li>
+                </ul>
+            </p>
+            <p class="price-highlight">Price: $4.99</p>
+            <div class="button-container">
+                <a href="Menu.html">Back to Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tropical Twist Juice Shop</p>
+    </footer>
+</body>
+</html>
